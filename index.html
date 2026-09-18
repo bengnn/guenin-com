@@ -11,10 +11,11 @@
     <meta property="og:description" content="Sites web performants pour les artisans et commerçants de Toulouse.">
     <meta property="og:type" content="website">
 
-    <!-- Polices : Montserrat (Titres) et Inter (Textes) -->
+    <!-- Polices & FontAwesome Icons -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <link rel="stylesheet" href="style.css">
 </head>
@@ -23,10 +24,11 @@
     <!-- HEADER -->
     <header class="header">
         <div class="container header-container">
-            <div class="logo">GUENIN Communication</div>
+            <a href="#" class="logo"><i class="fa-solid fa-code"></i> GUENIN <span>Communication</span></a>
             <nav class="nav">
-                <a href="#portfolio">Mes réalisations</a>
-                <a href="#tarifs">Tarifs & Services</a>
+                <a href="#portfolio">Réalisations</a>
+                <a href="#services">Accompagnement</a>
+                <a href="#tarifs">Tarifs</a>
             </nav>
             <a href="#contact" class="btn btn-primary">Obtenir un devis gratuit</a>
         </div>
@@ -35,11 +37,27 @@
     <!-- HERO SECTION -->
     <section class="hero">
         <div class="container hero-content">
-            <h1>J'aide les artisans de Toulouse à attirer plus de clients sur internet.</h1>
-            <p>Votre savoir-faire mérite d'être vu. Je conçois des sites web rapides, modernes et conçus pour transformer vos visiteurs locaux en clients fidèles.</p>
+            <div class="badge-local"><i class="fa-solid fa-location-dot"></i> Spécialiste Artisans & Commerçants - Toulouse</div>
+            <h1>J'aide les artisans de Toulouse à attirer plus de clients grâce à internet.</h1>
+            <p>Votre savoir-faire mérite d'être vu. Je conçois des sites web rapides, modernes et sur-mesure conçus pour transformer vos visiteurs locaux en clients fidèles.</p>
             <div class="hero-buttons">
-                <a href="#portfolio" class="btn btn-primary">Voir mes réalisations</a>
-                <a href="#contact" class="btn btn-secondary">Discutons de votre projet</a>
+                <a href="#contact" class="btn btn-primary"><i class="fa-solid fa-paper-plane"></i> Demander un devis gratuit</a>
+                <a href="#portfolio" class="btn btn-secondary"><i class="fa-solid fa-eye"></i> Voir les réalisations</a>
+            </div>
+            
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <strong>100%</strong>
+                    <span>Sur-mesure & Mobile</span>
+                </div>
+                <div class="stat-item">
+                    <strong>5-10j</strong>
+                    <span>Délai de livraison rapide</span>
+                </div>
+                <div class="stat-item">
+                    <strong>Local</strong>
+                    <span>Accompagnement à Toulouse</span>
+                </div>
             </div>
         </div>
     </section>
@@ -47,68 +65,76 @@
     <!-- PORTFOLIO SECTION -->
     <section id="portfolio" class="portfolio">
         <div class="container">
-            <h2>Mes réalisations</h2>
-            <p class="section-subtitle">Des sites conçus pour convaincre en moins de 3 secondes.</p>
+            <div class="section-title">
+                <h2>Mes réalisations</h2>
+                <p class="section-subtitle">Des sites conçus pour convaincre vos futurs clients en moins de 3 secondes.</p>
+            </div>
             
             <div class="grid" id="portfolio-grid">
                 
                 <article class="card">
                     <div class="card-image-wrapper">
-                        <div class="mockup-bg"><span>Boulangerie</span></div>
+                        <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=600&q=80" alt="Boulangerie Artisanale" class="card-img">
+                        <span class="card-badge">Boulangerie</span>
                     </div>
                     <div class="card-content">
                         <h3>Boulangerie Artisanale</h3>
-                        <p>Site vitrine optimisé pour la commande de click & collect.</p>
+                        <p>Site vitrine gourmand avec présentation du savoir-faire et catalogue Click & Collect.</p>
                     </div>
                 </article>
 
                 <article class="card">
                     <div class="card-image-wrapper">
-                        <div class="mockup-bg"><span>Boucherie</span></div>
+                        <img src="https://images.unsplash.com/photo-1607623814075-e51df1bdc82f?auto=format&fit=crop&w=600&q=80" alt="Boucherie Traditionnelle" class="card-img">
+                        <span class="card-badge">Boucherie</span>
                     </div>
                     <div class="card-content">
                         <h3>Boucherie Traditionnelle</h3>
-                        <p>Mise en avant des produits locaux et horaires d'ouverture.</p>
+                        <p>Mise en avant des éleveurs locaux, des arrivages de la semaine et horaires interactifs.</p>
                     </div>
                 </article>
 
                 <article class="card">
                     <div class="card-image-wrapper">
-                        <div class="mockup-bg"><span>Salon de Coiffure</span></div>
+                        <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=600&q=80" alt="Salon de Coiffure" class="card-img">
+                        <span class="card-badge">Coiffure</span>
                     </div>
                     <div class="card-content">
                         <h3>Salon de Coiffure</h3>
-                        <p>Intégration d'un module de réservation en ligne.</p>
+                        <p>Design épuré et intégration d'un module de prise de rendez-vous en ligne 24h/24.</p>
                     </div>
                 </article>
 
                 <article class="card">
                     <div class="card-image-wrapper">
-                        <div class="mockup-bg"><span>Barber Shop</span></div>
+                        <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=600&q=80" alt="Barber Shop" class="card-img">
+                        <span class="card-badge">Barber Shop</span>
                     </div>
                     <div class="card-content">
-                        <h3>Barber Shop</h3>
-                        <p>Design brut et urbain pour attirer une clientèle masculine.</p>
+                        <h3>Barber Shop Urbain</h3>
+                        <p>Univers moderne et masculin, grille tarifaire claire et réservation rapide sur mobile.</p>
                     </div>
                 </article>
 
                 <article class="card">
                     <div class="card-image-wrapper">
-                        <div class="mockup-bg"><span>Conciergerie</span></div>
+                        <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=600&q=80" alt="Conciergerie" class="card-img">
+                        <span class="card-badge">Conciergerie</span>
                     </div>
                     <div class="card-content">
-                        <h3>Conciergerie</h3>
-                        <p>Plateforme de présentation des services premium de gestion.</p>
+                        <h3>Conciergerie & Services</h3>
+                        <p>Plateforme haut de gamme présentant l'ensemble des prestations de gestion locative.</p>
                     </div>
                 </article>
 
                 <article class="card">
                     <div class="card-image-wrapper">
-                        <div class="mockup-bg"><span>Rénovation</span></div>
+                        <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=600&q=80" alt="Rénovation & Habitat" class="card-img">
+                        <span class="card-badge">Rénovation</span>
                     </div>
                     <div class="card-content">
-                        <h3>Maison Japonaise</h3>
-                        <p>Portfolio immersif pour un projet de rénovation de maison traditionnelle.</p>
+                        <h3>Maison & Rénovation</h3>
+                        <p>Galerie avant/après immersive mettant en valeur la qualité des travaux réalisés.</p>
                     </div>
                 </article>
 
@@ -116,11 +142,45 @@
         </div>
     </section>
 
+    <!-- SECTION PROCESSUS / SERVICES -->
+    <section id="services" class="process">
+        <div class="container">
+            <div class="section-title">
+                <h2>Un accompagnement simple et sans prise de tête</h2>
+                <p class="section-subtitle">Vous vous concentrez sur votre métier, je m'occupe de tout votre site.</p>
+            </div>
+            <div class="process-steps">
+                <div class="step-card">
+                    <div class="step-number">01</div>
+                    <h3>Échange & Devis</h3>
+                    <p>On fait le point sur vos besoins, vos produits et vos objectifs sans aucun engagement.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">02</div>
+                    <h3>Design & Maquette</h3>
+                    <p>Je conçois une structure visuelle adaptée à l'image de votre établissement.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">03</div>
+                    <h3>Développement & SEO</h3>
+                    <p>Création du site, optimisation de la vitesse et référencement Google local sur Toulouse.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">04</div>
+                    <h3>Mise en ligne</h3>
+                    <p>Votre site est en ligne, prêt à vous apporter de nouveaux clients tous les jours !</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- SECTION TARIFS -->
     <section id="tarifs" class="pricing">
         <div class="container">
-            <h2>Des tarifs transparents, sans surprise</h2>
-            <p class="section-subtitle">Chaque projet est unique, mais voici des bases claires pour vous projeter.</p>
+            <div class="section-title">
+                <h2>Des tarifs transparents, sans surprise</h2>
+                <p class="section-subtitle">Chaque projet est unique, voici des bases claires pour vous projeter.</p>
+            </div>
             
             <div class="pricing-grid">
                 
@@ -128,33 +188,33 @@
                 <div class="price-card">
                     <div class="price-header">
                         <h3>Pack Présence</h3>
-                        <p class="price-desc">Idéal pour démarrer rapidement et être visible sur Google.</p>
+                        <p class="price-desc">Parfait pour démarrer et être trouvable facilement sur Google.</p>
                         <div class="price">490 € <span>TTC</span></div>
                     </div>
                     <ul class="price-features">
-                        <li>Site One-Page ergonomique & mobile-first</li>
-                        <li>Intégration horaires, adresse & Google Maps</li>
-                        <li>Formulaire de contact + bouton d'appel direct</li>
-                        <li>Optimisation Vitesse & SEO local basique</li>
-                        <li>Livraison en 5 jours ouvrés</li>
+                        <li><i class="fa-solid fa-check"></i> Site One-Page ergonomique & mobile</li>
+                        <li><i class="fa-solid fa-check"></i> Horaires, adresse & Google Maps</li>
+                        <li><i class="fa-solid fa-check"></i> Formulaire de contact & bouton d'appel</li>
+                        <li><i class="fa-solid fa-check"></i> SEO local Toulouse basique</li>
+                        <li><i class="fa-solid fa-check"></i> Livraison en 5 jours ouvrés</li>
                     </ul>
                     <a href="#contact" class="btn btn-secondary btn-full">Choisir ce pack</a>
                 </div>
 
                 <!-- PACK 2 (Mise en avant) -->
                 <div class="price-card popular">
-                    <div class="popular-badge">Le plus demandé</div>
+                    <div class="popular-badge">Le plus populaire</div>
                     <div class="price-header">
                         <h3>Pack Artisan Pro</h3>
-                        <p class="price-desc">La solution complète pour convertir vos visiteurs en clients.</p>
+                        <p class="price-desc">La solution complète pour transformer vos visiteurs en clients.</p>
                         <div class="price">890 € <span>TTC</span></div>
                     </div>
                     <ul class="price-features">
-                        <li>Site multi-pages (jusqu'à 5 pages)</li>
-                        <li>Module spécifique (Réservation, Menu, Carte...)</li>
-                        <li>Gestion autonome du contenu (Sanity CMS)</li>
-                        <li>Référencement Google local optimisé</li>
-                        <li>Formation vidéo pour modifier votre site seul</li>
+                        <li><i class="fa-solid fa-check"></i> Site multi-pages (jusqu'à 5 pages)</li>
+                        <li><i class="fa-solid fa-check"></i> Module spécifique (Réservation, Menu, Carte)</li>
+                        <li><i class="fa-solid fa-check"></i> Gestion autonome de vos contenus</li>
+                        <li><i class="fa-solid fa-check"></i> Référencement Google local renforcé</li>
+                        <li><i class="fa-solid fa-check"></i> Formation vidéo personnalisée</li>
                     </ul>
                     <a href="#contact" class="btn btn-primary btn-full">Choisir ce pack</a>
                 </div>
@@ -163,48 +223,74 @@
                 <div class="price-card">
                     <div class="price-header">
                         <h3>Sur-Mesure</h3>
-                        <p class="price-desc">Pour des besoins spécifiques ou fonctionnalités avancées.</p>
+                        <p class="price-desc">Pour des projets complexes ou des fonctionnalités avancées.</p>
                         <div class="price">Sur devis</div>
                     </div>
                     <ul class="price-features">
-                        <li>E-commerce / Click & Collect complet</li>
-                        <li>Refonte graphique totale de site existant</li>
-                        <li>Connexion à vos outils métiers (caisse, agenda)</li>
-                        <li>Accompagnement & stratégie de contenu</li>
-                        <li>Suivi et maintenance mensuelle</li>
+                        <li><i class="fa-solid fa-check"></i> Boutique E-commerce / Click & Collect</li>
+                        <li><i class="fa-solid fa-check"></i> Refonte graphique complète</li>
+                        <li><i class="fa-solid fa-check"></i> Connexion à vos outils métiers (Agenda, Caisse)</li>
+                        <li><i class="fa-solid fa-check"></i> Stratégie de contenu personnalisée</li>
+                        <li><i class="fa-solid fa-check"></i> Maintenance & suivi mensuel</li>
                     </ul>
-                    <a href="#contact" class="btn btn-secondary btn-full">Demander un devis</a>
+                    <a href="#contact" class="btn btn-secondary btn-full">Demander un devis sur-mesure</a>
                 </div>
 
             </div>
         </div>
     </section>
 
-    <!-- CONTACT SECTION (NETLIFY FORMS) -->
+    <!-- CONTACT SECTION (FORMULAIRE DE DEVIS MODIFIÉ) -->
     <section id="contact" class="contact">
         <div class="container contact-container">
             <div class="contact-text">
-                <h2>Prêt à développer votre activité ?</h2>
-                <p>Parlons de votre projet. Le devis est 100% gratuit et sans engagement. Remplissez simplement ce formulaire et je vous recontacte sous 24h.</p>
+                <h2>Demandez votre devis gratuit</h2>
+                <p>Parlons de votre projet ! Le devis est <strong>100% gratuit et sans aucun engagement</strong>. Remplissez ce formulaire et je vous recontacte sous 24h.</p>
+                <div class="contact-info">
+                    <p><i class="fa-solid fa-envelope"></i> contact@guenin-communication.fr</p>
+                    <p><i class="fa-solid fa-location-dot"></i> Toulouse & agglomération</p>
+                </div>
             </div>
             <div class="contact-form">
                 <form name="contact" method="POST" data-netlify="true">
-                    <!-- Champ masqué obligatoire pour la détection Netlify -->
                     <input type="hidden" name="form-name" value="contact">
 
                     <div class="form-group">
-                        <label for="name">Votre nom / Nom de l'établissement</label>
-                        <input type="text" id="name" name="name" required placeholder="Ex: Jean Dupont - Boulangerie de l'Avenue">
+                        <label for="name">Nom / Nom de votre établissement *</label>
+                        <input type="text" id="name" name="name" required placeholder="Ex: Jean Dupont - Boulangerie de la Rose">
                     </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required placeholder="contact@moncommerce.fr">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Téléphone *</label>
+                            <input type="tel" id="phone" name="phone" required placeholder="06 00 00 00 00">
+                        </div>
+                    </div>
+
                     <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" required placeholder="contact@moncommerce.fr">
+                        <label for="pack">Quel service vous intéresse ?</label>
+                        <select id="pack" name="pack">
+                            <option value="Pack Présence (490€)">Pack Présence (490 €)</option>
+                            <option value="Pack Artisan Pro (890€)" selected>Pack Artisan Pro (890 €)</option>
+                            <option value="Sur-Mesure">Projet Sur-Mesure / Autre</option>
+                        </select>
                     </div>
+
                     <div class="form-group">
-                        <label for="message">Parlez-moi de votre besoin</label>
-                        <textarea id="message" name="message" rows="4" required placeholder="J'aimerais refaire le site de mon salon pour avoir plus de réservations..."></textarea>
+                        <label for="message">Décrivez brièvement votre besoin *</label>
+                        <textarea id="message" name="message" rows="4" required placeholder="J'aimerais créer un site pour mon salon de coiffure avec un module de réservation..."></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary btn-full">Envoyer ma demande</button>
+
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" id="rgpd" name="rgpd" required>
+                        <label for="rgpd">J'accepte d'être recontacté(e) dans le cadre de ma demande de devis.</label>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-full"><i class="fa-solid fa-paper-plane"></i> Envoyer ma demande de devis</button>
                 </form>
             </div>
         </div>
@@ -212,9 +298,12 @@
 
     <!-- FOOTER -->
     <footer class="footer">
-        <div class="container">
-            <p>&copy; 2026 GUENIN Communication - Tous droits réservés.</p>
-            <p>Développé avec passion pour les commerçants de Toulouse.</p>
+        <div class="container footer-content">
+            <p>&copy; 2026 <strong>GUENIN Communication</strong> - Tous droits réservés.</p>
+            <p>Conçu avec passion pour les artisans et commerçants de Toulouse.</p>
+            <div class="footer-links">
+                <a href="mentions-legales.html">Mentions Légales & Confidentialité</a>
+            </div>
         </div>
     </footer>
 
