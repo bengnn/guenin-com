@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GUENIN Communication | Création de sites web à Toulouse</title>
+    <meta name="description" content="Création de sites web performants pour les artisans et commerçants de Toulouse. Attirez plus de clients avec un site moderne et adapté aux mobiles.">
+    
+    <!-- Polices : Montserrat (Titres) et Inter (Textes) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container header-container">
+            <div class="logo">GUENIN Communication</div>
+            <nav class="nav">
+                <a href="#portfolio">Mes réalisations</a>
+                <a href="#services">Mes services</a>
+            </nav>
+            <a href="#contact" class="btn btn-primary">Obtenir un devis gratuit</a>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="container hero-content">
+            <h1>J'aide les artisans de Toulouse à attirer plus de clients sur internet.</h1>
+            <p>Votre savoir-faire mérite d'être vu. Je conçois des sites web rapides, modernes et conçus pour transformer vos visiteurs locaux en clients fidèles.</p>
+            <div class="hero-buttons">
+                <a href="#portfolio" class="btn btn-primary">Voir mes réalisations</a>
+                <a href="#contact" class="btn btn-secondary">Discutons de votre projet</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- PORTFOLIO SECTION -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2>Mes réalisations</h2>
+            <p class="section-subtitle">Des sites conçus pour convaincre en moins de 3 secondes.</p>
+            
+            <!-- Conteneur qui sera alimenté par Sanity (ou HTML brut en attendant) -->
+            <div class="grid" id="portfolio-grid">
+                
+                <article class="card">
+                    <div class="card-image-wrapper">
+                        <!-- Placeholder visuel : à remplacer par tes images -->
+                        <div class="mockup-bg"><span>Boulangerie</span></div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Boulangerie Artisanale</h3>
+                        <p>Site vitrine optimisé pour la commande de click & collect.</p>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card-image-wrapper">
+                        <div class="mockup-bg"><span>Boucherie</span></div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Boucherie Traditionnelle</h3>
+                        <p>Mise en avant des produits locaux et horaires d'ouverture.</p>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card-image-wrapper">
+                        <div class="mockup-bg"><span>Salon de Coiffure</span></div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Salon de Coiffure</h3>
+                        <p>Intégration d'un module de réservation en ligne.</p>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card-image-wrapper">
+                        <div class="mockup-bg"><span>Barber Shop</span></div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Barber Shop</h3>
+                        <p>Design brut et urbain pour attirer une clientèle masculine.</p>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card-image-wrapper">
+                        <div class="mockup-bg"><span>Conciergerie</span></div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Conciergerie</h3>
+                        <p>Plateforme de présentation des services premium de gestion.</p>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card-image-wrapper">
+                        <div class="mockup-bg"><span>Rénovation</span></div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Maison Japonaise</h3>
+                        <p>Portfolio immersif pour un projet de rénovation de maison traditionnelle.</p>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+    <!-- SECTION TARIFS -->
+        <section id="tarifs" class="pricing">
+            <div class="container">
+                <h2>Des tarifs transparents, sans surprise</h2>
+                <p class="section-subtitle">Chaque projet est unique, mais voici des bases claires pour vous projeter.</p>
+                
+                <div class="pricing-grid">
+                    
+                    <!-- PACK 1 -->
+                    <div class="price-card">
+                        <div class="price-header">
+                            <h3>Pack Présence</h3>
+                            <p class="price-desc">Idéal pour démarrer rapidement et être visible sur Google.</p>
+                            <div class="price">490 € <span>TTC</span></div>
+                        </div>
+                        <ul class="price-features">
+                            <li>Site One-Page ergonomique & mobile-first</li>
+                            <li>Intégration horaires, adresse & Google Maps</li>
+                            <li>Formulaire de contact + bouton d'appel direct</li>
+                            <li>Optimisation Vitesse & SEO local basique</li>
+                            <li>Livraison en 5 jours ouvrés</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-secondary btn-full">Choisir ce pack</a>
+                    </div>
+
+                    <!-- PACK 2 (Mise en avant) -->
+                    <div class="price-card popular">
+                        <div class="popular-badge">Le plus demandé</div>
+                        <div class="price-header">
+                            <h3>Pack Artisan Pro</h3>
+                            <p class="price-desc">La solution complète pour convertir vos visiteurs en clients.</p>
+                            <div class="price">890 € <span>TTC</span></div>
+                        </div>
+                        <ul class="price-features">
+                            <li>Site multi-pages (jusqu'à 5 pages)</li>
+                            <li>Module spécifique (Réservation, Menu, Carte...)</li>
+                            <li>Gestion autonome du contenu (Sanity CMS)</li>
+                            <li>Référencement Google local optimisé</li>
+                            <li>Formation vidéo pour modifier votre site seul</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-primary btn-full">Choisir ce pack</a>
+                    </div>
+
+                    <!-- PACK 3 -->
+                    <div class="price-card">
+                        <div class="price-header">
+                            <h3>Sur-Mesure</h3>
+                            <p class="price-desc">Pour des besoins spécifiques ou fonctionnalités avancées.</p>
+                            <div class="price">Sur devis</div>
+                        </div>
+                        <ul class="price-features">
+                            <li>E-commerce / Click & Collect complet</li>
+                            <li>Refonte graphique totale de site existant</li>
+                            <li>Connexion à vos outils métiers (caisse, agenda)</li>
+                            <li>Accompagnement & stratégie de contenu</li>
+                            <li>Suivi et maintenance mensuelle</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-secondary btn-full">Demander un devis</a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    <!-- CONTACT SECTION (NETLIFY FORMS) -->
+    <section id="contact" class="contact">
+        <div class="container contact-container">
+            <div class="contact-text">
+                <h2>Prêt à développer votre activité ?</h2>
+                <p>Parlons de votre projet. Le devis est 100% gratuit et sans engagement. Remplissez simplement ce formulaire et je vous recontacte sous 24h.</p>
+            </div>
+            <div class="contact-form">
+                <!-- L'attribut data-netlify="true" fait fonctionner le formulaire tout seul sur Netlify -->
+                <form name="contact" method="POST" data-netlify="true">
+                    <div class="form-group">
+                        <label for="name">Votre nom / Nom de l'établissement</label>
+                        <input type="text" id="name" name="name" required placeholder="Ex: Jean Dupont - Boulangerie de l'Avenue">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required placeholder="contact@moncommerce.fr">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Parlez-moi de votre besoin</label>
+                        <textarea id="message" name="message" rows="4" required placeholder="J'aimerais refaire le site de mon salon pour avoir plus de réservations..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">Envoyer ma demande</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 GUENIN Communication - Tous droits réservés.</p>
+            <p>Développé avec passion pour les commerçants de Toulouse.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
