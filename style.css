@@ -167,7 +167,7 @@ h1, h2, h3, .logo {
     gap: 32px;
 }
 
-/* CARDS */
+/* CARDS PORTFOLIO */
 .card {
     background: var(--bg-main);
     border-radius: var(--radius);
@@ -186,7 +186,6 @@ h1, h2, h3, .logo {
     position: relative;
 }
 
-/* Effet Mockup en attendant tes vraies images Sanity */
 .mockup-bg {
     width: 100%;
     height: 100%;
@@ -214,105 +213,6 @@ h1, h2, h3, .logo {
     font-size: 15px;
 }
 
-/* CONTACT SECTION */
-.contact {
-    padding: 80px 0;
-    background-color: var(--bg-section);
-}
-
-.contact-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 64px;
-    align-items: center;
-}
-
-.contact-text h2 {
-    font-size: 36px;
-    margin-bottom: 16px;
-}
-
-.contact-text p {
-    font-size: 18px;
-    color: var(--text-light);
-}
-
-.contact-form {
-    background: var(--white);
-    padding: 40px;
-    border-radius: var(--radius);
-    box-shadow: var(--shadow);
-}
-
-.form-group {
-    margin-bottom: 24px;
-}
-
-.form-group label {
-    display: block;
-    margin-bottom: 8px;
-    font-weight: 500;
-}
-
-.form-group input,
-.form-group textarea {
-    width: 100%;
-    padding: 12px 16px;
-    border: 1px solid #CBD5E0;
-    border-radius: 4px;
-    font-family: var(--font-body);
-    font-size: 16px;
-    background-color: var(--bg-main);
-}
-
-.form-group input:focus,
-.form-group textarea:focus {
-    outline: none;
-    border-color: var(--primary-color);
-}
-
-/* FOOTER */
-.footer {
-    background-color: var(--text-dark);
-    color: var(--white);
-    text-align: center;
-    padding: 40px 0;
-}
-
-.footer p {
-    color: #A0AEC0;
-}
-
-/* MOBILE RESPONSIVE */
-@media (max-width: 768px) {
-    .header-container {
-        flex-direction: column;
-        height: auto;
-        padding: 16px 0;
-        gap: 16px;
-    }
-    
-    .nav {
-        display: none; /* Simplification mobile : focalisation sur le CTA */
-    }
-    
-    .hero h1 {
-        font-size: 32px;
-    }
-    
-    .hero-buttons {
-        flex-direction: column;
-    }
-    
-    .contact-container {
-        grid-template-columns: 1fr;
-        gap: 32px;
-    }
-    
-    .contact-form {
-        padding: 24px;
-    }
-}
 /* SECTION TARIFS */
 .pricing {
     padding: 80px 0;
@@ -331,6 +231,7 @@ h1, h2, h3, .logo {
     gap: 32px;
     align-items: stretch;
     margin-top: 40px;
+    padding-top: 16px; /* Espace de sécurité pour l'insigne "Le plus demandé" */
 }
 
 .price-card {
@@ -411,8 +312,106 @@ h1, h2, h3, .logo {
     margin-right: 10px;
 }
 
+/* CONTACT SECTION */
+.contact {
+    padding: 80px 0;
+    background-color: var(--bg-section);
+}
+
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 64px;
+    align-items: center;
+}
+
+.contact-text h2 {
+    font-size: 36px;
+    margin-bottom: 16px;
+}
+
+.contact-text p {
+    font-size: 18px;
+    color: var(--text-light);
+}
+
+.contact-form {
+    background: var(--white);
+    padding: 40px;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+}
+
+.form-group {
+    margin-bottom: 24px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid #CBD5E0;
+    border-radius: 4px;
+    font-family: var(--font-body);
+    font-size: 16px;
+    background-color: var(--bg-main);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+/* FOOTER */
+.footer {
+    background-color: var(--text-dark);
+    color: var(--white);
+    text-align: center;
+    padding: 40px 0;
+}
+
+.footer p {
+    color: #A0AEC0;
+}
+
+/* MOBILE RESPONSIVE (Toutes les règles mobile regroupées ici) */
 @media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        height: auto;
+        padding: 16px 0;
+        gap: 16px;
+    }
+    
+    .nav {
+        display: none;
+    }
+    
+    .hero h1 {
+        font-size: 32px;
+    }
+    
+    .hero-buttons {
+        flex-direction: column;
+    }
+    
     .price-card.popular {
-        transform: none; /* Annule l'effet d'agrandissement sur mobile pour garder la grille propre */
+        transform: none; /* Annule l'effet d'agrandissement sur mobile */
+    }
+
+    .contact-container {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+    
+    .contact-form {
+        padding: 24px;
     }
 }
