@@ -6,6 +6,11 @@
     <title>GUENIN Communication | Création de sites web à Toulouse</title>
     <meta name="description" content="Création de sites web performants pour les artisans et commerçants de Toulouse. Attirez plus de clients avec un site moderne et adapté aux mobiles.">
     
+    <!-- Open Graph (Partage Réseaux Sociaux) -->
+    <meta property="og:title" content="GUENIN Communication | Création de sites web à Toulouse">
+    <meta property="og:description" content="Sites web performants pour les artisans et commerçants de Toulouse.">
+    <meta property="og:type" content="website">
+
     <!-- Polices : Montserrat (Titres) et Inter (Textes) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,7 +26,7 @@
             <div class="logo">GUENIN Communication</div>
             <nav class="nav">
                 <a href="#portfolio">Mes réalisations</a>
-                <a href="#services">Mes services</a>
+                <a href="#tarifs">Tarifs & Services</a>
             </nav>
             <a href="#contact" class="btn btn-primary">Obtenir un devis gratuit</a>
         </div>
@@ -45,12 +50,10 @@
             <h2>Mes réalisations</h2>
             <p class="section-subtitle">Des sites conçus pour convaincre en moins de 3 secondes.</p>
             
-            <!-- Conteneur qui sera alimenté par Sanity (ou HTML brut en attendant) -->
             <div class="grid" id="portfolio-grid">
                 
                 <article class="card">
                     <div class="card-image-wrapper">
-                        <!-- Placeholder visuel : à remplacer par tes images -->
                         <div class="mockup-bg"><span>Boulangerie</span></div>
                     </div>
                     <div class="card-content">
@@ -112,69 +115,71 @@
             </div>
         </div>
     </section>
+
     <!-- SECTION TARIFS -->
-        <section id="tarifs" class="pricing">
-            <div class="container">
-                <h2>Des tarifs transparents, sans surprise</h2>
-                <p class="section-subtitle">Chaque projet est unique, mais voici des bases claires pour vous projeter.</p>
+    <section id="tarifs" class="pricing">
+        <div class="container">
+            <h2>Des tarifs transparents, sans surprise</h2>
+            <p class="section-subtitle">Chaque projet est unique, mais voici des bases claires pour vous projeter.</p>
+            
+            <div class="pricing-grid">
                 
-                <div class="pricing-grid">
-                    
-                    <!-- PACK 1 -->
-                    <div class="price-card">
-                        <div class="price-header">
-                            <h3>Pack Présence</h3>
-                            <p class="price-desc">Idéal pour démarrer rapidement et être visible sur Google.</p>
-                            <div class="price">490 € <span>TTC</span></div>
-                        </div>
-                        <ul class="price-features">
-                            <li>Site One-Page ergonomique & mobile-first</li>
-                            <li>Intégration horaires, adresse & Google Maps</li>
-                            <li>Formulaire de contact + bouton d'appel direct</li>
-                            <li>Optimisation Vitesse & SEO local basique</li>
-                            <li>Livraison en 5 jours ouvrés</li>
-                        </ul>
-                        <a href="#contact" class="btn btn-secondary btn-full">Choisir ce pack</a>
+                <!-- PACK 1 -->
+                <div class="price-card">
+                    <div class="price-header">
+                        <h3>Pack Présence</h3>
+                        <p class="price-desc">Idéal pour démarrer rapidement et être visible sur Google.</p>
+                        <div class="price">490 € <span>TTC</span></div>
                     </div>
-
-                    <!-- PACK 2 (Mise en avant) -->
-                    <div class="price-card popular">
-                        <div class="popular-badge">Le plus demandé</div>
-                        <div class="price-header">
-                            <h3>Pack Artisan Pro</h3>
-                            <p class="price-desc">La solution complète pour convertir vos visiteurs en clients.</p>
-                            <div class="price">890 € <span>TTC</span></div>
-                        </div>
-                        <ul class="price-features">
-                            <li>Site multi-pages (jusqu'à 5 pages)</li>
-                            <li>Module spécifique (Réservation, Menu, Carte...)</li>
-                            <li>Gestion autonome du contenu (Sanity CMS)</li>
-                            <li>Référencement Google local optimisé</li>
-                            <li>Formation vidéo pour modifier votre site seul</li>
-                        </ul>
-                        <a href="#contact" class="btn btn-primary btn-full">Choisir ce pack</a>
-                    </div>
-
-                    <!-- PACK 3 -->
-                    <div class="price-card">
-                        <div class="price-header">
-                            <h3>Sur-Mesure</h3>
-                            <p class="price-desc">Pour des besoins spécifiques ou fonctionnalités avancées.</p>
-                            <div class="price">Sur devis</div>
-                        </div>
-                        <ul class="price-features">
-                            <li>E-commerce / Click & Collect complet</li>
-                            <li>Refonte graphique totale de site existant</li>
-                            <li>Connexion à vos outils métiers (caisse, agenda)</li>
-                            <li>Accompagnement & stratégie de contenu</li>
-                            <li>Suivi et maintenance mensuelle</li>
-                        </ul>
-                        <a href="#contact" class="btn btn-secondary btn-full">Demander un devis</a>
-                    </div>
-
+                    <ul class="price-features">
+                        <li>Site One-Page ergonomique & mobile-first</li>
+                        <li>Intégration horaires, adresse & Google Maps</li>
+                        <li>Formulaire de contact + bouton d'appel direct</li>
+                        <li>Optimisation Vitesse & SEO local basique</li>
+                        <li>Livraison en 5 jours ouvrés</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-secondary btn-full">Choisir ce pack</a>
                 </div>
+
+                <!-- PACK 2 (Mise en avant) -->
+                <div class="price-card popular">
+                    <div class="popular-badge">Le plus demandé</div>
+                    <div class="price-header">
+                        <h3>Pack Artisan Pro</h3>
+                        <p class="price-desc">La solution complète pour convertir vos visiteurs en clients.</p>
+                        <div class="price">890 € <span>TTC</span></div>
+                    </div>
+                    <ul class="price-features">
+                        <li>Site multi-pages (jusqu'à 5 pages)</li>
+                        <li>Module spécifique (Réservation, Menu, Carte...)</li>
+                        <li>Gestion autonome du contenu (Sanity CMS)</li>
+                        <li>Référencement Google local optimisé</li>
+                        <li>Formation vidéo pour modifier votre site seul</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary btn-full">Choisir ce pack</a>
+                </div>
+
+                <!-- PACK 3 -->
+                <div class="price-card">
+                    <div class="price-header">
+                        <h3>Sur-Mesure</h3>
+                        <p class="price-desc">Pour des besoins spécifiques ou fonctionnalités avancées.</p>
+                        <div class="price">Sur devis</div>
+                    </div>
+                    <ul class="price-features">
+                        <li>E-commerce / Click & Collect complet</li>
+                        <li>Refonte graphique totale de site existant</li>
+                        <li>Connexion à vos outils métiers (caisse, agenda)</li>
+                        <li>Accompagnement & stratégie de contenu</li>
+                        <li>Suivi et maintenance mensuelle</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-secondary btn-full">Demander un devis</a>
+                </div>
+
             </div>
-        </section>
+        </div>
+    </section>
+
     <!-- CONTACT SECTION (NETLIFY FORMS) -->
     <section id="contact" class="contact">
         <div class="container contact-container">
@@ -183,8 +188,10 @@
                 <p>Parlons de votre projet. Le devis est 100% gratuit et sans engagement. Remplissez simplement ce formulaire et je vous recontacte sous 24h.</p>
             </div>
             <div class="contact-form">
-                <!-- L'attribut data-netlify="true" fait fonctionner le formulaire tout seul sur Netlify -->
                 <form name="contact" method="POST" data-netlify="true">
+                    <!-- Champ masqué obligatoire pour la détection Netlify -->
+                    <input type="hidden" name="form-name" value="contact">
+
                     <div class="form-group">
                         <label for="name">Votre nom / Nom de l'établissement</label>
                         <input type="text" id="name" name="name" required placeholder="Ex: Jean Dupont - Boulangerie de l'Avenue">
