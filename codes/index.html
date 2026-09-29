@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GUENIN Communication | Création de sites web à Toulouse</title>
+    <meta name="description" content="Création de sites web performants et sur-mesure pour les artisans et commerçants à Toulouse.">
+    
+    <!-- Polices Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header / Navigation -->
+    <header class="header">
+        <div class="container nav-container">
+            <a href="#" class="logo">GUENIN <span>Communication</span></a>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Réalisations</a></li>
+                    <li><a href="#a-propos">À Propos</a></li>
+                    <li><a href="#contact" class="btn btn-nav">Demander un devis</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-content">
+            <span class="badge">Développeur Web Freelance à Toulouse</span>
+            <h1>Des sites web sur-mesure qui convertissent vos visiteurs en <strong>clients locaux</strong>.</h1>
+            <p>J'accompagne les artisans, commerçants et TPE toulousaines dans la création d'une présence en ligne moderne, rapide et rentable.</p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn btn-primary">Obtenir un devis personnalisé</a>
+                <a href="#portfolio" class="btn btn-secondary">Voir mes réalisations</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Services -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Mes Services sur-mesure</h2>
+                <p>Des solutions adaptées aux besoins réels des commerçants et artisans toulousains.</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🚀</div>
+                    <h3>Site Présence (One-Page)</h3>
+                    <p>Idéal pour démarrer rapidement. Une page moderne pour présenter votre activité, vos horaires et capturer des demandes de contact.</p>
+                    <span class="service-price">À partir de 600€</span>
+                </div>
+
+                <div class="service-card featured">
+                    <span class="card-badge">Populaire</span>
+                    <div class="service-icon">🛠️</div>
+                    <h3>Site Artisan Complet</h3>
+                    <p>Multi-pages optimisé pour Google. Présentation détaillée de vos prestations, galerie de réalisations et formulaire de devis enrichi.</p>
+                    <span class="service-price">À partir de 1 200€</span>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🔄</div>
+                    <h3>Refonte & SEO Local</h3>
+                    <p>Modernisation d'un site existant, amélioration de la vitesse et optimisation Google Maps pour booster votre visibilité sur Toulouse.</p>
+                    <span class="service-price">Sur Devis</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Portfolio (Prêt pour Sanity CMS) -->
+    <section id="portfolio" class="portfolio-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Réalisations & Projets</h2>
+                <p>Découvrez quelques exemples de sites conçus pour des acteurs locaux.</p>
+            </div>
+
+            <div class="portfolio-grid" id="sanity-portfolio-container">
+                <!-- Projet 1 -->
+                <article class="project-card" data-sanity-id="project-1">
+                    <div class="project-image-placeholder">
+                        <span class="placeholder-text">📷 Emplacement Photo Sanity</span>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category">Artisan / Rénovation</span>
+                        <h3>Menuiserie Toulouse Nord</h3>
+                        <p>Création d'un site vitrine avec galerie de chantiers et formulaire de demande de métré en ligne.</p>
+                        <div class="project-tags">
+                            <span>HTML/CSS</span>
+                            <span>Netlify</span>
+                            <span>SEO Local</span>
+                        </div>
+                        <!-- Met la vraie URL du site client dans href="" ci-dessous -->
+                        <a href="https://exemple.com" target="_blank" rel="noopener" class="project-link">Visiter le site en direct ↗</a>
+                    </div>
+                </article>
+
+                <!-- Projet 2 -->
+                <article class="project-card" data-sanity-id="project-2">
+                    <div class="project-image-placeholder">
+                        <span class="placeholder-text">📷 Emplacement Photo Sanity</span>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category">Commerce de Proximité</span>
+                        <h3>Boulangerie Saint-Cyprien</h3>
+                        <p>Site One-Page présentant la carte des pains bio, les horaires et la localisation Google Maps.</p>
+                        <div class="project-tags">
+                            <span>JavaScript</span>
+                            <span>Fast Load</span>
+                        </div>
+                        <a href="https://exemple.com" target="_blank" rel="noopener" class="project-link">Visiter le site en direct ↗</a>
+                    </div>
+                </article>
+
+                <!-- Projet 3 -->
+                <article class="project-card" data-sanity-id="project-3">
+                    <div class="project-image-placeholder">
+                        <span class="placeholder-text">📷 Emplacement Photo Sanity</span>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category">Services / Bâtiment</span>
+                        <h3>Électricité & Domotique 31</h3>
+                        <p>Refonte graphique complète et intégration d'un calculateur de devis rapide pour les particuliers.</p>
+                        <div class="project-tags">
+                            <span>Design Responsive</span>
+                            <span>Netlify Forms</span>
+                        </div>
+                        <a href="https://exemple.com" target="_blank" rel="noopener" class="project-link">Visiter le site en direct ↗</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section À Propos -->
+    <section id="a-propos" class="about-section">
+        <div class="container about-container">
+            <div class="about-text">
+                <h2>Votre interlocuteur unique à Toulouse</h2>
+                <p>Je suis développeur web indépendant basé à Toulouse. Contrairement aux grandes agences, vous échangez directement avec la personne qui conçoit et code votre site.</p>
+                <p>Mon objectif : vous livrer un outil clair, ultra-rapide sur mobile, sans abonnement caché et simple à faire évoluer.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Formulaire Devis Enrichi -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Obtenez une estimation de votre projet</h2>
+                <p>Répondez à ces quelques questions rapides pour recevoir un devis précis sous 24h.</p>
+            </div>
+
+            <form name="devis-artisan" method="POST" data-netlify="true" class="devis-form">
+                <input type="hidden" name="form-name" value="devis-artisan">
+
+                <!-- Étape 1 : Le Type de Projet -->
+                <div class="form-step">
+                    <label class="step-title">1. Quel est votre projet ?</label>
+                    <div class="options-grid">
+                        <label class="option-card">
+                            <input type="radio" name="type_projet" value="creation_onepage" required>
+                            <span class="card-content">
+                                <strong>Création One-Page</strong>
+                                <small>1 page efficace pour démarrer</small>
+                            </span>
+                        </label>
+                        <label class="option-card">
+                            <input type="radio" name="type_projet" value="creation_multipages">
+                            <span class="card-content">
+                                <strong>Site Complet (3 à 5 pages)</strong>
+                                <small>Présentation détaillée de vos services</small>
+                            </span>
+                        </label>
+                        <label class="option-card">
+                            <input type="radio" name="type_projet" value="refonte">
+                            <span class="card-content">
+                                <strong>Refonte de site existant</strong>
+                                <small>Moderniser ou accélérer votre site actuel</small>
+                            </span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Étape 2 : Les Fonctionnalités -->
+                <div class="form-step">
+                    <label class="step-title">2. De quoi avez-vous besoin ? (Cochez les cases)</label>
+                    <div class="checkbox-grid">
+                        <label class="checkbox-card">
+                            <input type="checkbox" name="features[]" value="formulaire_sur_mesure">
+                            <span>Formulaire de devis sur-mesure</span>
+                        </label>
+                        <label class="checkbox-card">
+                            <input type="checkbox" name="features[]" value="galerie_photos">
+                            <span>Galerie / Portfolio de vos réalisations</span>
+                        </label>
+                        <label class="checkbox-card">
+                            <input type="checkbox" name="features[]" value="cms_sanity">
+                            <span>Espace pour modifier votre contenu vous-même (CMS)</span>
+                        </label>
+                        <label class="checkbox-card">
+                            <input type="checkbox" name="features[]" value="seo_toulouse">
+                            <span>Optimisation du référencement local (Google Toulouse)</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Étape 3 : Délais & Budget -->
+                <div class="form-step">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="delai">Délai souhaité</label>
+                            <select id="delai" name="delai" required>
+                                <option value="" disabled selected>Choisissez une option</option>
+                                <option value="urgent">Très urgent (moins de 2 semaines)</option>
+                                <option value="1_mois">D'ici 1 mois</option>
+                                <option value="pas_pres">Pas de date fixe</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="budget">Budget estimé</label>
+                            <select id="budget" name="budget">
+                                <option value="non_defini">Non défini</option>
+                                <option value="500_1000">500€ - 1 000€</option>
+                                <option value="1000_2000">1 000€ - 2 000€</option>
+                                <option value="2000_plus">Plus de 2 000€</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Étape 4 : Coordonnées -->
+                <div class="form-step">
+                    <label class="step-title">3. Vos coordonnées</label>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="nom">Nom & Prénom / Entreprise *</label>
+                            <input type="text" id="nom" name="nom" placeholder="Ex: Jean Dupont - Boulangerie St-Cyprien" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="telephone">Téléphone *</label>
+                            <input type="tel" id="telephone" name="telephone" placeholder="06 12 34 56 78" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Adresse E-mail *</label>
+                        <input type="email" id="email" name="email" placeholder="jean@exemple.fr" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Précisions particulières (Optionnel)</label>
+                        <textarea id="message" name="message" rows="3" placeholder="Avez-vous déjà un nom de domaine ou un logo ?"></textarea>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-block">Envoyer ma demande de devis gratuit</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>&copy; 2026 GUENIN Communication - Tous droits réservés. Développeur Web à Toulouse.</p>
+            <p class="footer-links">
+                <a href="mentions-legales.html">Mentions Légales & Politique de Confidentialité</a>
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
